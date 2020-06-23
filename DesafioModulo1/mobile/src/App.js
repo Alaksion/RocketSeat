@@ -19,6 +19,7 @@ export default function App() {
   // Retrieve projects from API
   useEffect(()=> {
     api.get('/repositories').then(res => {
+      console.log(res.data)
       Setrepositories(res.data)
     })
 
